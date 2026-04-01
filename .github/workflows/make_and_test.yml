@@ -17,11 +17,11 @@ jobs:
 
     steps:
 
+    - name: Получение кода и actions
+      uses: actions/checkout@v4
+
     - name: Инсталляция инструментов
       uses: ./.github/actions/install-prerequisites
-
-    - name: Получение кода
-      uses: actions/checkout@v4
 
     - uses: ./.github/actions/make-utest
       with:

@@ -14,10 +14,11 @@ jobs:
 
     steps:
 
+    - name: Получение кода и actions
+      uses: actions/checkout@v4
+
     - name: Инсталляция инструментов
       uses: ./.github/actions/install-prerequisites
-
-    - uses: actions/checkout@v4
 
     - name: Стиль кодирования
       uses: per1234/artistic-style-action@v1
