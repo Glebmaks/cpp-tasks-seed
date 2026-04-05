@@ -16,7 +16,7 @@ clean :
 	- rm *.hdrdep.bak
 
 cleanall : clean
-	- rm release debug debug_test
+	- rm release debug debug_test utest
 	- echo > Makefile.hdrdep
 
 mrproper : cleanall
